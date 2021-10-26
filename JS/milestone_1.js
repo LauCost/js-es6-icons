@@ -123,7 +123,7 @@ post.forEach(post => {
         <div class="col">
             <div class="post" type="${post.type}" >
                 <i class="${post.family} ${post.prefix}${post.name}" style="color: ${color};"></i>
-                <p>${post.name}</p>
+                <p>${post.name.toUpperCase()}</p>
             </div>
         </div>
     `
