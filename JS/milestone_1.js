@@ -1,4 +1,4 @@
-
+//Array of objects
 const post = [
     {
         name: 'cat',
@@ -98,12 +98,20 @@ const post = [
     }
 ];
 
+//Select the container in which it will print the content
 const container = document.querySelector(".row");
 
+//ForEach that will read the array and print the objects in DOM
 post.forEach(post => {
 
+
+
+
+    //  ************ Milestone 2  ************
+    //Empty array of colors
     let color = [];
 
+    //An if that will check the type of icon and assign the color
     if (post.type == "animal") {
 
         color = "#0000FF"
@@ -117,7 +125,13 @@ post.forEach(post => {
         color = "#800080"
 
     }
+    //  ************ /Milestone 2  ************
 
+
+
+
+
+    //Print the objects of array in DOM
     const cardPost = `
     
         <div class="col">
