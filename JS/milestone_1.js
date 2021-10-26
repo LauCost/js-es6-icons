@@ -107,7 +107,7 @@ post.forEach(post => {
         <div class="col">
             <div class="post">
                 <i class="${post.family} ${post.prefix}${post.name}"></i>
-                <p>CAT</p>
+                <p>${post.name}</p>
             </div>
         </div>
     `
