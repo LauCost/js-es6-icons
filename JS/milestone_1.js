@@ -102,11 +102,27 @@ const container = document.querySelector(".row");
 
 post.forEach(post => {
 
+    let color = [];
+
+    if (post.type == "animal") {
+
+        color = "#0000FF"
+
+    } else if (post.type == "vegetable") {
+
+        color = "#FFA500"
+
+    } else if (post.type == "user") {
+
+        color = "#800080"
+
+    }
+
     const cardPost = `
     
         <div class="col">
-            <div class="post">
-                <i class="${post.family} ${post.prefix}${post.name}"></i>
+            <div class="post" type="${post.type}" >
+                <i class="${post.family} ${post.prefix}${post.name}" style="color: ${color};"></i>
                 <p>${post.name}</p>
             </div>
         </div>
